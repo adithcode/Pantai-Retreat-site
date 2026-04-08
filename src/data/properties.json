@@ -1,0 +1,27 @@
+[
+  {
+    "slug": "pantai-retreat-villa",
+    "name": "Pantai Retreat Villa",
+    "location": "Azhikode, Kerala",
+    "description": "Experience unparalleled luxury with a blend of heritage and modern comforts at Pantai Retreat Villa.",
+    "amenities": ["Private Pool", "Beach Access", "Gourmet Kitchen", "High-speed Wi-Fi", "Daily Housekeeping"],
+    "links": {
+      "airbnb": "https://airbnb.com",
+      "booking": "https://booking.com",
+      "agoda": "https://agoda.com"
+    },
+    "images": [
+      "/balconyphoto.jpg",
+      "/photofromoutisde.jpg",
+      "/livingroom.jpg",
+      "/bedroomup.jpg",
+      "/sitout.jpg"
+    ],
+    "rules": [
+      "Do not roam around outside after consuming alcohol.",
+      "Strictly no loud music or excessive noise after 10:00 PM.",
+      "Smoking is only permitted in designated outdoor areas.",
+      "Respect the local neighborhood and guidelines."
+    ]
+  }
+]
