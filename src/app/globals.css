@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Outfit", sans-serif;
+  
+  --color-sand-50: #fdfcfb;
+  --color-sand-100: #f7f4f0;
+  --color-sand-200: #efeae2;
+  --color-sand-300: #e3dad0;
+  --color-sand-400: #d2c4b5;
+  --color-sand-500: #bca895;
+  
+  --color-ocean-50: #f2f7fc;
+  --color-ocean-100: #e2eff9;
+  --color-ocean-200: #c9e0f3;
+  --color-ocean-600: #2a5884;
+  --color-ocean-700: #1e3f60;
+  --color-ocean-800: #14283c;
+  --color-ocean-900: #0a1420;
+  --color-ocean-950: #050a10;
+  
+  --color-gold-100: #f9f5eb;
+  --color-gold-200: #efe1c8;
+  --color-gold-300: #dfc599;
+  --color-gold-400: #cca66a;
+  --color-gold-500: #b38b47;
+  --color-gold-600: #997133;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #fdfcfb;
+  --foreground: #0a1420;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Glassmorphism utilities */
+.glass-light {
+  background: rgba(253, 252, 251, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(253, 252, 251, 0.3);
+}
+
+.glass-dark {
+  background: rgba(5, 10, 16, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(253, 252, 251, 0.08);
+}
+
+.glass-navbar {
+  background: rgba(253, 252, 251, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Custom Scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Flat, Clean Editorial styling shapes */
+.shadow-luxury {
+  box-shadow: none;
+}
+
+.shadow-luxury-lg {
+  box-shadow: none;
+}
+
+/* Micro-interaction helpers (flat border transitions) */
+.hover-lift {
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+}
+.hover-lift:hover {
+  border-color: #cca66a; /* gold-400 */
+}
+
+/* Page fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
